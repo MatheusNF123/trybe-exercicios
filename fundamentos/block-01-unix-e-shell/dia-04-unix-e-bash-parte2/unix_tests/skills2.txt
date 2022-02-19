@@ -1,0 +1,8 @@
+internet
+unix
+bash
+kernel
+root
+home
+comandos
+trybe
