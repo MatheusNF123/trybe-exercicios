@@ -28,26 +28,26 @@ h3:nth-child(){
     font-size: 50px;
 }
 
-div:nth-child(3) h3:nth-child(1){
+div:nth-child(3) h3{
     color: red;
     
 }
-div:nth-child(4) h3:nth-child(1){
+div:nth-child(4) h3{
     font-family: Arial, Helvetica, sans-serif;
     color: yellow;
     
 }
-div:nth-child(5) h3:nth-child(1){
+div:nth-child(5) h3{
     font-family: Arial, Helvetica, sans-serif;
     color: purple;
     
 }
-div:nth-child(6) h3:nth-child(1){
+div:nth-child(6) h3{
     font-family: Arial, Helvetica, sans-serif;
     color: pink;
     
 }
-div:nth-child(7) h3:nth-child(1){
+div:nth-child(7) h3{
     font-family: Arial, Helvetica, sans-serif;
     color: brown;
     
