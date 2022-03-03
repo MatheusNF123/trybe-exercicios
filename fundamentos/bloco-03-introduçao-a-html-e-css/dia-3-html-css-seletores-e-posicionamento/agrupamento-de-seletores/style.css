@@ -1,0 +1,11 @@
+h1, p{
+    text-align: center;
+}
+
+ol:hover{
+    background-color: #87a0bd;
+}
+
+ul, ol{
+    list-style: none;
+}
