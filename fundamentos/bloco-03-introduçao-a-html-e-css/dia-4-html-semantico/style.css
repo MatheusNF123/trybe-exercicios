@@ -31,12 +31,18 @@ nav ul li{
     padding: 5px;
     margin-right: 30px;
     
-
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     background-color: black;
-    font-size: 20px;
+    color: white;
+    border-radius: 2px;
+    
+
     
 }
 
@@ -74,12 +80,15 @@ nav ul li:hover{
     height: 300px;
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     
  }
 
  .direita{
-    float: right;    
+    float: right;
+    position: relative;
+    right: 40px
+     
     
 
  }
@@ -99,8 +108,7 @@ table th{
     
 }
 table td{
-    text-align: center;
-    
+    text-align: center;    
     padding: 8px;
 }
 
@@ -111,17 +119,24 @@ table td:first-child{
 
  .esquerda{
     float: left;
-    width: 300px;
+    width: 40%;
+    position: relative;
+    left: 50px;
+    
+
+    
  }
 
  .esquerda h3{
      padding-bottom: 20px;
      font-size: 20px;
+     
  }
 
  .esquerda p{
      font-size: 17px;
      line-height: 22px;
+     
  }
 
 /* ---------------- */
