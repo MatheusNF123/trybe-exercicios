@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(48, 143, 233);
 
 /* -----HEADER------*/
 }
@@ -44,7 +44,7 @@ nav ul li:hover{
 
 .container{
     background-color: white;
-    width: 80%;
+    width: 60%;
     margin: auto;
     padding: 30px;
 }
@@ -72,7 +72,7 @@ nav ul li:hover{
 
  .relative{
     height: 300px;
-    width: 50%;
+    width: 80%;
     margin: auto;
     margin-top: 20px;
     
@@ -81,29 +81,25 @@ nav ul li:hover{
  .direita{
     float: right;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid black;
 
  }
 
  .direita h3{
-     background-color: rgb(250, 0, 0);
-     color: white;
-     font-size: 20px;
+    background-color: rgb(250, 0, 0);
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
  }
 
  .classificação-lista li{
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 
 
  }
- .classificação-lista li:nth-child(odd){
-     background-color: rgb(255, 255, 255);
- }
- .classificação-lista li:nth-child(even){
-     background-color: rgb(0, 0, 0);
-     color: white;
- }
+ 
 
 
 
@@ -119,19 +115,20 @@ nav ul li:hover{
 
  .esquerda p{
      font-size: 17px;
+     line-height: 22px;
  }
 
-
+/* ---------------- */
  .sobre-fatos{
      margin-bottom: 25px;
-     border: 1px solid black;
-     color: white;
-     background-color: black;
+     
+     
+     
      padding: 20px;
  }
 
  .sobre-fatos h3{
-     font-size: 20px;
+     font-size: 30px;
      padding: 15px 0px;
 
 
@@ -140,6 +137,61 @@ nav ul li:hover{
  .sobre-fatos p{
      line-height: 30px;
      font-size: 18px;
+     
  }
+
+.imagem{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.imagem img{
+    width: 50%;
+    padding: 5px;
+}
+/* ----------------------------- */
+.video h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.container-video{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}  
+    
+
+/* ----- */
+
+.bibliografia h3{
+font-size: 30px;
+margin: 15px 0px;
+
+}
+
+.bibliografia a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    
+    
+}
+
+/* -------------- */
+
+.footer{
+ background-color: black;
+}
+.footer span{
+    color: rgb(151, 151, 151);
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-style: italic;
+    font-size: 25px;
+}
+ 
 
 

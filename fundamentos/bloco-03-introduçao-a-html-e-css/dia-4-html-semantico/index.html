@@ -13,14 +13,14 @@
     <!--insira os elementos aqui-->
     <nav>
         <ul>
-            <li><a href="">Pagina Inicial</a> </li>
-            <li><a href="">Sobre</a> </li>
-            <li><a href="">Contato</a> </li>
+            <li><a href="#inicio">Pagina Inicial</a> </li>
+            <li><a href="#fatos-link">Sobre</a> </li>
+            <li><a href="#contato">Contato</a> </li>
 
         </ul>
     </nav>
     <header>
-        <h1>Soco a 80km/h: conheça o Stomatopoda</h1>
+        <h1 id="inicio">Soco a 80km/h: conheça o Stomatopoda</h1>
         
     </header>
     <article class="container">
@@ -42,23 +42,29 @@
                     o nome cientifíco é <em>Odontodactylus scyllarus</em>, é uma ordem de crustáceos marinhos da subclasse
                     Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda
                     pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.[2]</p>
+                    
             </div>
                 
             <aside class="direita">
                 <h3>Classificação científica</h3>
                     <ul class="classificação-lista">
-                        <li>Reino: Animalia </li>
-                        <li>Filo: Arthropoda </li>
-                        <li>Subfilo: Crustacea </li>
-                        <li>classe: Malacostraca </li>
-                        <li>Subclasse: Hoplocarida </li>
-                        <li> Ordem: Stomatopoda </li>
+                        <li> <strong> Reino:</strong> Animalia </li>
+                        <li><strong>Filo:</strong>  Arthropoda </li>
+                        <li><strong>Subfilo:</strong>  Crustacea </li>
+                        <li><strong>classe:</strong> Malacostraca </li>
+                        <li><strong>Subclasse:</strong> Hoplocarida </li>
+                        <li><strong>Ordem:</strong>  Stomatopoda </li>
 
                     </ul>
+                    
             </aside>
         </section>
-        <section class="sobre-fatos">
+        <section class="sobre-fatos" id="fatos-link">
             <h3>Animais carnívoros</h3>
+            <div class="imagem">
+                <img src="https://socientifica.com.br/wp-content/uploads/2020/11/Mantis_shrimp_Odontodactylus_scyllarus-1140x815.jpg" alt=""> <br>
+                <span><em>fonte da imagem:<a href="https://socientifica.com.br/o-camarao-mantis-luta-ferozmente-para-roubar-tocas-de-rivais/">Socientifica</a></em></span>
+            </div>
             <p>São animais exclusivamente carnívoros, alimentando-se de camarões, caranguejos, moluscos, peixes e até
                 mesmo outros da mesma ordem. O segundo par de patas, muito desenvolvido, é usado tanto para atacar a
                 presa como para se defender. O urópodo, quando aberto, também funciona para defesa, como um escudo,
@@ -68,6 +74,10 @@
         </section>
         <section class="sobre-fatos">
             <h3>Força esmagadora</h3>
+            <div class="imagem">
+                <img src="https://4.bp.blogspot.com/-OwEI-EWjtlw/WrBi4M2nEcI/AAAAAAAAOdI/etJnmH4Zo0Qia0yVP6HTg31xUTrDW35oQCLcBGAs/s320/tnc150925_shrimpfight_1280.jpg.CROP_.promo-xlarge2.jpg" alt=""> <br>
+                <span><em>fonte da imagem:<a href="https://especiesmarinhas.blogspot.com/2018/03/">especiesmarinhas.blogspot.com/</a></em></span>
+            </div>
             <p>As maiores esmagadoras, tais como exemplares de Odontodactylus scyllarus, são capazes de desferir um dos
                 mais rápidos e violentos golpes do reino animal, um soco que pode apresentar a velocidade de um tiro
                 calibre .22 (equivalente a 720 km/h) e uma pressão de impacto de 600 N/cm².[3] Essa força esmagadora é a
@@ -77,6 +87,11 @@
         </section>
         <section class="sobre-fatos">
             <h3>Visão</h3>
+            <div class="imagem">
+                <img src="https://1.bp.blogspot.com/-oYJiCsKfGwA/WrBg8cn7AhI/AAAAAAAAOb8/MMHfaaSRBzQT304CJbs-1pq0qMTV60dTACLcBGAs/s1600/images.jpg" alt=""> <br>
+                <span> <em>fonte da imagem: <a href="https://especiesmarinhas.blogspot.com/2018/03/"> especiesmarinhas.blogspot.com/2018/03/</a></em> </span>
+                
+            </div>
             <p>Esses animais possuem o mais complexo sistema de visão de cores do mundo animal, pois enxergam 12 cores
                 primárias, correspondentes aos 12 pigmentos distintos presentes em sua retina.
 
@@ -95,13 +110,21 @@
                 visão dos estomatópodes é sensível à luz ultravioleta, mas ainda é desconhecido se ela pode distinguir a
                 luz infravermelha</p>
         </section>
-        <section>
-            <h3>Bibliografia</h3>
+        <section class="video">
+            <h3>Assista um video deste animal em ação</h3>
+            <div class="container-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="bibliografia">
+            <h3>Fontes:</h3>
+            <a href="https://pt.wikipedia.org/wiki/Stomatopoda">wikipedia</a> <br>
+            <a href="https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder">nationalgeographic/</a>
         </section>
 
     </article>
-    <footer>
-        <span>Conteúdo feito por Matheus, ano 2022</span>
+    <footer class="container footer">
+        <span id="contato">Conteúdo feito por <a href="https://www.linkedin.com/in/matheus-almeida-saporito-088450219/" target="_blank">Matheus</a> , ano 2022</span>
     </footer>
 </body>
 
