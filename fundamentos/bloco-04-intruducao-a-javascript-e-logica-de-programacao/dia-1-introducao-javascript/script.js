@@ -207,7 +207,7 @@ Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imp
 
 
 
-let inss;
+/* let inss;
 let ir;
 
 let salarioBruto = 2000.00;
@@ -243,4 +243,4 @@ else{
   ir = (salarioBase * 0.275) - 869.36;
 }
 
-console.log("salario: " + (salarioBase - ir));
+console.log("salario: " + (salarioBase - ir)); */
