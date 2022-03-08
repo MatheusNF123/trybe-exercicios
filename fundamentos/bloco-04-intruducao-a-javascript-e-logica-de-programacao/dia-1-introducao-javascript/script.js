@@ -73,7 +73,7 @@ if(todosPositivos){
   } */
 
   /* 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. */
-  let xadrez = "peao";
+  /* let xadrez = "peao"; */
   
  /*  switch(xadrez.toLocaleLowerCase()){
       case "peao":
@@ -154,7 +154,7 @@ if(a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
 /* 9 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
 Bonus: use somente um if . */
 
-const a = 32;
+/* const a = 32;
 const b = 50;
 const c = 18;
 
@@ -163,4 +163,84 @@ let ehImpar = false;
 if(a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
     ehImpar = true;
 }
-    console.log(ehImpar);
+    console.log(ehImpar); */
+
+
+
+
+/* 10 - Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos */
+
+/* * Atente que, sobre o custo do produto, incide um imposto de 20%
+
+* Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+
+* O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo. */
+
+/* const valorDeCusto = 1;
+const valorDeVenda = 3;
+
+if(valorDeCusto >= 0 && valorDeVenda >=0){
+  let valorCustoTotal = valorDeCusto * 1.2;
+  let valorDeLucro = (valorDeVenda - valorCustoTotal) * 1000;
+  console.log(valorDeLucro);
+
+}
+else{
+  console.log("error")
+} */
+
+/* 11 - Uma pessoa de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido por ela. */
+
+/* * A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências: */
+  /* NSS (Instituto Nacional do Seguro Social)
+  Salário bruto até R$ 1.556,94: alíquota de 8%
+  Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+  Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+  Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88 */
+
+  /* IR (Imposto de Renda)
+Até R$ 1.903,98: isento de imposto de renda
+De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto. */
+
+
+
+let inss;
+let ir;
+
+let salarioBruto = 2000.00;
+
+if(salarioBruto <= 1556.94){
+  inss = salarioBruto * 0.08;
+}
+else if (salarioBruto <= 2594.92){
+  inss = salarioBruto * 0.09;
+}
+else if(salarioBruto <= 5198.82){
+  inss = salarioBruto * 0.11;
+}
+else if(salarioBruto > 5189.82){
+  inss = 570.88;
+}
+
+let salarioBase = salarioBruto - inss;
+
+if(salarioBase <= 1903.98){
+  ir = 0;
+}
+else if (salarioBase <= 2826.64){
+  ir = (salarioBase * 0.075) - 142.80;
+}
+else if( salarioBase <= 3751.05){
+  ir = (salarioBase * 0.15) - 354.80;
+}
+else if (salarioBase <= 4664.68){
+  ir = (salarioBase * 0.225) - 635.13;
+}
+else{
+  ir = (salarioBase * 0.275) - 869.36;
+}
+
+console.log("salario: " + (salarioBase - ir));
