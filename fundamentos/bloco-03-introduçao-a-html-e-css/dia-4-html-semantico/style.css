@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(48, 143, 233);
+
+/* -----HEADER------*/
+}
+header{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 30px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    
+
+    
+}
+
+/* ----- Article ------ */
+
+.container{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.fatos-container{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: rgb(190, 190, 190);
+      
+}
+
+.fatos-container ol{
+    list-style: none;
+    line-height: 20px;
+}
+
+
+ .fatos-container h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+ }
+
+ /* ---- section ---- */
+
+ .relative{
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    
+ }
+
+ .direita{
+    float: right;
+    position: relative;
+    right: 40px
+     
+    
+
+ }
+
+table{
+    border: 1px solid black;
+    
+}
+.table-title{
+    border: 1px solid black;
+    color: blue;
+    text-align: center;
+    border-bottom: none;
+}
+table th{
+    padding: 10px;
+    
+}
+table td{
+    text-align: center;    
+    padding: 8px;
+}
+
+table td:first-child{
+    font-weight: bold;
+}
+
+
+ .esquerda{
+    float: left;
+    width: 40%;
+    position: relative;
+    left: 50px;
+    
+
+    
+ }
+
+ .esquerda h3{
+     padding-bottom: 20px;
+     font-size: 20px;
+     
+ }
+
+ .esquerda p{
+     font-size: 17px;
+     line-height: 22px;
+     
+ }
+
+/* ---------------- */
+ .sobre-fatos{
+     margin-bottom: 25px;
+     
+     
+     
+     padding: 20px;
+ }
+
+ .sobre-fatos h3{
+     font-size: 30px;
+     padding: 15px 0px;
+
+
+ }
+
+ .sobre-fatos p{
+     line-height: 30px;
+     font-size: 18px;
+     
+ }
+
+.imagem{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.imagem img{
+    width: 50%;
+    padding: 5px;
+}
+/* ----------------------------- */
+.video h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.container-video{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}  
+    
+
+/* ----- */
+
+.bibliografia h3{
+font-size: 30px;
+margin: 15px 0px;
+
+}
+
+.bibliografia a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    
+    
+}
+
+/* -------------- */
+
+.footer{
+ background-color: black;
+}
+.footer span{
+    color: rgb(151, 151, 151);
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-style: italic;
+    font-size: 25px;
+}
+ 
+
+
