@@ -29,5 +29,19 @@ console.log(numbers) */
 }
 
 console.log(numbers); */
+let novoArray = [];
+for(let cont = 0; cont < numbers.length; cont += 1){
+    if (numbers[cont + 1]){
+    novoArray.push(numbers[cont] * numbers[cont + 1]);
+    }
+    else{
+        novoArray.push(numbers[cont] * 2);
+    }
+    
+}
+console.log(novoArray);
+
+
+
 
 
