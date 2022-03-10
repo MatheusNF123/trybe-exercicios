@@ -14,20 +14,20 @@ console.log('resultado final ', + fatorial)  */
 
 
 /* 2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab". Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente. */
-/* 
-let word = 'tryber';
+ 
+/* let word = 'tryber';
 let invert = "";
 
 for( let cont = word.length - 1; cont >= 0; cont-- ){
-    invert = word[cont];
+    invert += word[cont];
     
 }
-console.log(invert);
- */
+console.log(invert); */
+ 
 
 // 3 - Considere o array de strings abaixo:
 
-let array = ['java', 'javascript', 'python', 'html', 'css']; 
+// let array = ['java', 'javascript', 'python', 'html', 'css']; 
 
 // Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
 /* let mairoPalavra = array[0];
@@ -59,7 +59,7 @@ console.log('menor palavra', menorPalavra ); */
 
 // 4 -  Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
 
-let maiorNumeroPrimo = 0;
+/* let maiorNumeroPrimo = 0;
 
 for(let cont = 0; cont <= 50; cont += 1){
     let ehNumeroPrimo = true;
@@ -75,6 +75,6 @@ for(let cont = 0; cont <= 50; cont += 1){
     }
 
 }
-console.log(maiorNumeroPrimo);
+console.log(maiorNumeroPrimo); */
 
 
