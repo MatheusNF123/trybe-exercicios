@@ -76,10 +76,34 @@ maiorQuantidadeCracteres(indiceNome);
 
 // 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
+let arrayDeInteiro = [2,3,2,5,8,3,3,4,8,5,5,6,10,10,10,10,10,,2,3];
 
+function inteiroQueMaisRepete(inteiros){
+    let a = 0;
+    let repetiuN = 0;
+    let repetiuV = 0;
+    let repetiuQ = 0;
+    for(let cont = 0; cont < inteiros.length; cont += 1){
+        a += 1;
+        for(cont2 = a; cont2 < inteiros.length; cont2 += 1){
+            if (inteiros[cont] === inteiros[cont2]){
+                repetiuV += 1;                
+                repetiuN = inteiros[cont];
+                if(repetiuV < repetiuQ){
+                    repetiuQ = repetiuV;
+                    repetiuN = inteiros[cont];
+                }
+                
+            }       
+        }
 
+        
+        
+    }
+    return repetiuN;
+}
 
-
+console.log(inteiroQueMaisRepete(arrayDeInteiro));
 
 
 
@@ -98,3 +122,25 @@ function somaTodosOsNumeros(numero){
 
 console.log(somaTodosOsNumeros(5))
 
+
+
+// 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+
+
+
+function verificaFimPalavra(nome1, nome2){
+    let primeiro = "";
+    let segundo = "";
+    for(let cont = nome1.length - 2; cont <= nome1.length - 1; cont += 1){
+        primeiro += nome1[cont];
+    }
+    for(let cont2 = nome2.length - 2; cont2 <= nome2.length - 1; cont2 += 1){
+        segundo += nome2[cont2];
+    }
+    if(primeiro === segundo){
+        return true;
+    }
+    return false;
+}
+
+console.log(verificaFimPalavra("joaofernando", "fernan"))
