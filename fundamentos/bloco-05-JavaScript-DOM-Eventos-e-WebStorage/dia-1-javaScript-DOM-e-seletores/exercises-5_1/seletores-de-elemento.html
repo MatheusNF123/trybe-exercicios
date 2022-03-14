@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="umaClass">alo alo alo</p>
+      <p class="umaClass">ali ali ali</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById('page-title').innerText = 'Os Vingadores'
+      document.getElementById('second-paragraph').innerText = "Alooo"
+      document.getElementById('subtitle').innerText = "programação"
+      document.getElementsByClassName('umaClass')[0].style.color = 'red';
+      document.getElementsByTagName('h4')[0].style.color = 'blue';
+    </script>
+  </body>
+</html>
