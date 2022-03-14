@@ -144,3 +144,6 @@ function verificaFimPalavra(nome1, nome2){
 }
 
 console.log(verificaFimPalavra("joaofernando", "fernan"))
+
+
+
