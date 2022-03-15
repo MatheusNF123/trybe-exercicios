@@ -57,7 +57,64 @@
   </head>
   <body>
     <script>
-      
+        let body1 = document.querySelector('body');     
+    // 1- Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+      let titulo = document.createElement('h1')
+      body1.appendChild(titulo)
+      titulo.innerHTML = '<h1>Exercício 5.2 - JavaScript DOM</h1>'
+
+    // 2- Adicione a tag main com a classe main-content como filho da tag body ;
+    let principal = document.createElement('main')
+    body1.appendChild(principal)
+    principal.classList = 'main-content'
+
+    // 3- Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+    let section1 = document.createElement('section')
+    principal.appendChild(section1)
+    section1.classList = 'center-content'
+    
+    // 4- Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    let paragrafo1 = document.createElement('p')
+    section1.appendChild(paragrafo1);
+    paragrafo1.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining'
+
+
+    // 5- Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    let section2 = document.createElement('section')
+    principal.appendChild(section2);
+    section2.classList = 'left-content'
+
+    // 6- Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    let section3 = document.createElement('section')
+    principal.appendChild(section3);
+    section2.classList = 'left-right'
+
+    // 7- Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+    let imagem1 = document.createElement('img')
+    section2.appendChild(imagem1)
+    imagem1.src = 'https://picsum.photos/200'
+    imagem1.classList = 'small-image'
+
+    // 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+    let listaNaoOrdernada = document.createElement('ul')
+    section3.appendChild(listaNaoOrdernada)
+    let listas = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
+    for(let index = 0; index < listas.length; index += 1){
+        let numeros = listas[index];
+        
+        let listaDenumeros = document.createElement('li')
+        listaDenumeros.innerText = numeros;
+        
+        listaNaoOrdernada.appendChild(listaDenumeros)
+    }
+
+    // - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+     let titulo3 = document.createElement('h3')   
+     let titulo4 = document.createElement('h3')   
+     let titulo5 = document.createElement('h3')
+     principal.appendChild(titulo3)  
+     principal.appendChild(titulo4)  
+     principal.appendChild(titulo)  
     </script>
   </body>
 </html>
