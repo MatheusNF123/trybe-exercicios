@@ -70,13 +70,17 @@
 
 
       // - Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
-      paiZao.firstElementChild.removeChild(primeiroFilho1);
-      ondeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho1); 
-      ondeVoceEsta.removeChild(filhoDeOndeVoceEsta)
-      pai.removeChild(terceiroFilho)
-      pai.removeChild(quartoEUltimoFilho)
-      /* ondeVoceEsta.removeChild(irmaoOndeVoceEsta) */
-      console.log(pai)
+      
+
+    for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+      const filhos = pai.childNodes[index];
+      if (filhos.id !== 'elementoOndeVoceEsta') {
+        filhos.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
 
     </script>
   </main>
