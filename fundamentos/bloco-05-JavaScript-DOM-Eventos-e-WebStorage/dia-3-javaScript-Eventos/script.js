@@ -157,43 +157,55 @@ function selecionaTask(){
 
 
 // Exercício 10:
-/* function atibuiCor(event){
-
+ function atibuiCor(event){
+  let minhaCor = document.getElementsByClassName('task selected')[0]
+  let pegaCor = minhaCor.style.backgroundColor  
   let evento = event.target
-  if(evento.style.color === 'blue'){
-    evento.style.color = 'rgb(119,119,119)'
-    console.log('a')    
-    }
-    else{
-      evento.style.color = 'blue'
-      console.log('b')
+  if(evento.style.color === pegaCor){
+    evento.style.color = 'rgb(119,119,119)'        
+  }
+  else{
+    evento.style.color = pegaCor
+      
     
   }
 }
-const diasDias = document.querySelector('#day');
-diasDias.addEventListener('click', function(event){
+let diasss = document.querySelector('#days')
+diasss.addEventListener('click', atibuiCor)
 
-} */
 
-function setDayColor(){
-  let selecionaLista = document.getElementsByClassName('task selected')
-  let dias = document.querySelector('#days');
-  let listaDiv = document.querySelector('.task')
-  let listaColor = listaDiv.style.backgroundColor;
+// Bônus:
 
-  dias.addEventListener('click', function(event){
-    let eventTargetColor = event.target.style.color;
-    if(selecionaLista.length > 0 && eventTargetColor !== listaColor){
-      let color = selecionaLista[0].style.backgroundColor;
-      event.target.style.color = color;
 
-    }
-    else if(eventTargetColor === listaColor && selecionaLista.length !== 0){
-      event.target.style.color = 'rgb(119,119,119)'
-    }
-  })
+// referencia keypress https://developer.mozilla.org/pt-BR/docs/Web/API/Document/keypress_event 
+// https://www.youtube.com/watch?v=OnY78r8kkXo
+function compromisos(){
+  const caixaTexto = document.querySelector('#task-input')
+  let pegarTexto = caixaTexto.value
+  if(pegarTexto == ""){
+    alert('Error! Você não digitou nada ainda!')
+  }
+  else{
+    let span = document.createElement('li')
+    document.querySelector('.task-list').appendChild(span)
+    span.innerText = pegarTexto
+    
+  }
+  caixaTexto.value = '';
+
+  
+  
 }
-setDayColor()
+const botaoCompromisso = document.querySelector('#btn-add')
+botaoCompromisso.addEventListener('click', compromisos)
+
+const caixaTexto2 = document.querySelector('#task-input')
+caixaTexto2.addEventListener('keypress', function(event){
+  if(event.key === 'Enter'){
+    compromisos()
+  }
+
+})
 
 
 
