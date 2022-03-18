@@ -157,20 +157,44 @@ function selecionaTask(){
 
 
 // Exercício 10:
+/* function atibuiCor(event){
 
-days.addEventListener('click', atibuiCor)
-function atibuiCor(event){
-  const listas = document.querySelectorAll('.day')
-  for(let index = 0; index < listas.length; index += 1){
-    if(listas[index].style.color === 'blue'){
-    listas[index] = event.target.style.color = 'rgb(119,119,119)'
-    console.log('a')
-    
+  let evento = event.target
+  if(evento.style.color === 'blue'){
+    evento.style.color = 'rgb(119,119,119)'
+    console.log('a')    
     }
     else{
-      listas[index] = event.target.style.color = 'blue'
+      evento.style.color = 'blue'
       console.log('b')
     
   }
-  }
 }
+const diasDias = document.querySelector('#day');
+diasDias.addEventListener('click', function(event){
+
+} */
+
+function setDayColor(){
+  let selecionaLista = document.getElementsByClassName('task selected')
+  let dias = document.querySelector('#days');
+  let listaDiv = document.querySelector('.task')
+  let listaColor = listaDiv.style.backgroundColor;
+
+  dias.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if(selecionaLista.length > 0 && eventTargetColor !== listaColor){
+      let color = selecionaLista[0].style.backgroundColor;
+      event.target.style.color = color;
+
+    }
+    else if(eventTargetColor === listaColor && selecionaLista.length !== 0){
+      event.target.style.color = 'rgb(119,119,119)'
+    }
+  })
+}
+setDayColor()
+
+
+
+
