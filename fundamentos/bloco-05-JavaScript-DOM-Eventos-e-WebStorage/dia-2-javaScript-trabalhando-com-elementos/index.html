@@ -57,101 +57,83 @@
   </head>
   <body>
     <script>
-        let body1 = document.querySelector('body');     
-    // 1- Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-      let titulo = document.createElement('h1')
-      body1.appendChild(titulo)
-      titulo.innerHTML = '<h1>Exercício 5.2 - JavaScript DOM</h1>'
-
-    // 2- Adicione a tag main com a classe main-content como filho da tag body ;
-    let principal = document.createElement('main')
-    body1.appendChild(principal)
-    principal.classList = 'main-content'
-
-    // 3- Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-    let section1 = document.createElement('section')
-    principal.appendChild(section1)
-    section1.classList = 'center-content'
-    
-    // 4- Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-    let paragrafo1 = document.createElement('p')
-    section1.appendChild(paragrafo1);
-    paragrafo1.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining'
-
-
-    // 5- Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-    let section2 = document.createElement('section')
-    principal.appendChild(section2);
-    section2.classList = 'left-content'
-
-    // 6- Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-    let section3 = document.createElement('section')
-    principal.appendChild(section3);
-    section3.classList = 'right-content'
-
-    // 7- Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
-    let imagem1 = document.createElement('img')
-    section2.appendChild(imagem1)
-    imagem1.src = 'https://picsum.photos/200'
-    imagem1.classList = 'small-image'
-
-    // 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-    let listaNaoOrdernada = document.createElement('ul')
-    section3.appendChild(listaNaoOrdernada)
-    let listas = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
-    for(let index = 0; index < listas.length; index += 1){
-        let numeros = listas[index];
+        const body = document.querySelector('body')
         
-        let listaDenumeros = document.createElement('li')
-        listaDenumeros.innerText = numeros;
-        
-        listaNaoOrdernada.appendChild(listaDenumeros)
-        listaDenumeros.classList = 'lista-numeros'
-    }
-    
-
-    // - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-    for(let cont = 1; cont <= 3; cont += 1){
-        let titulo3 = document.createElement('h3')
-        titulo3.innerHTML = 'Texto' + cont;
-        principal.appendChild(titulo3)
-    }
-     
- 
-
-     // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
-
-     // 1 - Adicione a classe title na tag h1 criada;
-    titulo.classList = 'primeiro-titulo'
-
-    // 2 -Adicione a classe description nas 3 tags h3 criadas;
-    let titulo3 = document.getElementsByTagName('h3')
-    for(let index1 = 0; index1 < 3; index1 += 1){
-        titulo3[index1].classList = 'description'
-    }
-    
-
-    // 3 - Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
-    principal.removeChild(section2) 
-
-    // 4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
-    section3.style.marginRight = 'auto'
-    
-
-    // 5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
-    section1.style.backgroundColor = 'green'
-    
-    // 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
-    let listaNumerosLi = document.querySelectorAll('.lista-numeros')
-    for(let i = 0; i < listaNumerosLi.length; i += 1){
-        let elemento = listaNumerosLi[i];
-
-        if(elemento.innerText.includes('nove') || elemento.innerText.includes('dez')){
-            listaNaoOrdernada.removeChild(elemento)
+        // 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+        const titulo = document.createElement('h1')
+        body.appendChild(titulo)
+        titulo.innerText = 'Exercício 5.2 - JavaScript DOM'
+        // 2 - Adicione a tag main com a classe main-content como filho da tag body ;
+        const main = document.createElement('main')
+        body.appendChild(main)
+        main.classList = 'main-content'
+        // 3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+        const section1 = document.createElement('section')
+        main.appendChild(section1)
+        section1.classList = 'center-content'
+        // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+        const p = document.createElement('p')
+        section1.appendChild(p)
+        p.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown'
+        // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        const section2 = document.createElement('section')
+        main.appendChild(section2)
+        section2.classList = 'left-content'
+        // 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+        const section3 = document.createElement('section')
+        main.appendChild(section3)
+        section3.classList = 'right-content'
+        // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+        const imagem = document.createElement('img')
+        section2.appendChild(imagem)
+        imagem.src = 'https://picsum.photos/200'
+        imagem.classList = 'small-image'
+        // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+        let lista = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez'];        
+        const  listaNaoOrdenada = document.createElement('ul')
+        section3.appendChild(listaNaoOrdenada)
+        let listanF = []
+         for(let cont = 0; cont < lista.length; cont += 1 ){
+            let listaN = document.createElement('li')
+            listaNaoOrdenada.appendChild(listaN)
+            listaN.innerText = lista[cont]
+            listanF.push(lista[cont])
         }
-    }
-    
+          
+        // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+        let titulo3 = []
+        for(let cont = 1; cont <= 3; cont += 1){
+            const h3 = document.createElement('h3')
+            titulo3.push(h3)
+            main.appendChild(h3)
+            h3.innerText = 'texto ' + cont;
+        }
+        
+        
 
+        // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+
+        // 1 - Adicione a classe title na tag h1 criada;
+        titulo.classList = 'title'
+        // 2 - Adicione a classe description nas 3 tags h3 criadas;
+        
+        for(let cont = 0; cont < 3; cont += 1){
+            titulo3[cont].classList = 'description'            
+        }  
+        // 3 - Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+        main.removeChild(section2)
+        // 4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+        section3.style.marginRight = 'auto'
+        // 5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+        main.style.backgroundColor = 'green'
+        // 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+        let listaN = document.getElementsByTagName('li')
+        for(let cont = listaN.length - 1; cont >= 0; cont -= 1){
+            if(listanF[cont] === 'nove' || listanF[cont] === 'dez'){
+                listaNaoOrdenada.removeChild(listaN[cont])
+            } 
+        }
+        
     </script>
   </body>
 </html>
