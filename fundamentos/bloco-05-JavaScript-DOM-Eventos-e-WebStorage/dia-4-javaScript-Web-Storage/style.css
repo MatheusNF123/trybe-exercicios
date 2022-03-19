@@ -1,0 +1,40 @@
+.todosBotoes{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    
+    
+    
+}
+
+.option{
+    display: inline-block;
+          
+    margin: 5px;
+    padding: 0px 20px 0px 20px;
+    
+    
+    
+    
+}
+
+
+button{
+    display: block;
+    margin: auto;
+    padding: 3px;
+    font-size: 15px;
+    margin-top: 8px;
+    width: 150px;
+    
+}
+
+body{
+    margin: 30px;
+    
+}
+
+
+p{
+    font-family: monospace;
+}
