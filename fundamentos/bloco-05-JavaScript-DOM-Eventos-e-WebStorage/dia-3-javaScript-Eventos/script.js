@@ -152,7 +152,14 @@ adicionaLegenda(cor)
 const minhaDiv = document.getElementsByClassName('task')[0]
 minhaDiv.addEventListener('click', selecionaTask)
 function selecionaTask(){
+  if(minhaDiv.className !== 'task selected'){
   minhaDiv.classList.add('selected')
+  console.log('a')
+}
+  else{
+  minhaDiv.classList.remove('selected')
+  console.log('b')
+}
 }
 
 
@@ -161,6 +168,7 @@ function selecionaTask(){
   let minhaCor = document.getElementsByClassName('task selected')[0]
   let pegaCor = minhaCor.style.backgroundColor  
   let evento = event.target
+  
   if(evento.style.color === pegaCor){
     evento.style.color = 'rgb(119,119,119)'        
   }
@@ -169,7 +177,10 @@ function selecionaTask(){
       
     
   }
+
+
 }
+
 let diasss = document.querySelector('#days')
 diasss.addEventListener('click', atibuiCor)
 
@@ -193,8 +204,6 @@ function compromisos(){
   }
   caixaTexto.value = '';
 
-  
-  
 }
 const botaoCompromisso = document.querySelector('#btn-add')
 botaoCompromisso.addEventListener('click', compromisos)
