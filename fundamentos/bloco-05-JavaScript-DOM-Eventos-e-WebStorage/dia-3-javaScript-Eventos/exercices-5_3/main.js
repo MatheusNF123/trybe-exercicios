@@ -31,6 +31,8 @@ input.addEventListener('change', alteraTexto)
 function alteraTexto(event){
     let  valor = event.target.value
     firstLi.innerText = valor;
+    
+    
 }
 
 
