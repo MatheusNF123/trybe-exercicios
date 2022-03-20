@@ -28,8 +28,9 @@ thirdLi.addEventListener('click', addClass)
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 input.addEventListener('change', alteraTexto)
-function alteraTexto(){
-    firstLi.innerText = 'mudou';
+function alteraTexto(event){
+    let  valor = event.target.value
+    firstLi.innerText = valor;
 }
 
 
