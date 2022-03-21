@@ -57,7 +57,7 @@ btn.addEventListener('click', mudaCor)
 function mudaCor() {
   const diasLI = document.getElementsByClassName('holiday')
   for (let cont = 0; cont < diasLI.length; cont += 1) {
-    if (diasLI[cont].style.backgroundColor == 'red') {
+    if (diasLI[cont].style.backgroundColor === 'red') {
       diasLI[cont].style.backgroundColor = 'rgb(238,238,238)'
     }
     else {
