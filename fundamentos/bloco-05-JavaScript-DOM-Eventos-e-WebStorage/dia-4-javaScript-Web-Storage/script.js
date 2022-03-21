@@ -99,7 +99,7 @@
                 lineHeight = 'normal'
             }
             p[index].style.lineHeight = lineHeight
-            console.log(p[index])
+            
             
         }
         localStorage.setItem('lineHeight', lineHeight)
@@ -116,24 +116,26 @@
     // familia da fonte
 
     function mudaTipoFonte(event){
-        let p = document.querySelectorAll('.paragrafo')
-        let eventoTarget = event.target.innerHTML
-        console.log(eventoTarget)
+        let p = document.querySelectorAll('.paragrafo')        
+        let evento = event
         for(let index = 0; index < p.length; index += 1){
-            p[index].style.fontFamily = eventoTarget
+            p[index].style.fontFamily = evento
             
         }
-        localStorage.setItem('fontFamily', eventoTarget)
+        localStorage.setItem('fontFamily', evento)
     }
 
     let tipoDaFonte = document.querySelectorAll('#tipoFonte button')
     for(let cont = 0; cont < tipoDaFonte.length; cont += 1){
-        tipoDaFonte[cont].addEventListener('click', mudaTipoFonte)
+        tipoDaFonte[cont].addEventListener('click', function(event){
+            mudaTipoFonte(event.target.innerHTML)
+        })
     }
 
     function outrasCores(event){
         let p = document.querySelectorAll('.paragrafo')           
-        let valores = event.target.value
+        let valores = event
+        
         for(let index = 0; index < p.length; index += 1){
             p[index].style.backgroundColor = valores
         }
@@ -141,7 +143,28 @@
     }
 
     let maisCores = document.querySelector('#background-color2')
-    maisCores.addEventListener('input', outrasCores)
+    maisCores.addEventListener('input', function(event){
+        outrasCores(event.target.value)
+        
+    })
+
+    function outrosTamanhos(fonteTamanho){
+       let p = document.querySelectorAll('.paragrafo')
+       let evento = fonteTamanho    
+       
+       
+       for(let cont = 0; cont < p.length; cont += 1){
+           p[cont].style.fontSize = evento + 'px'
+       }       
+        localStorage.setItem('maisTamanhos2', evento) 
+    }
+
+    let maisTamanhos = document.querySelector('#maisTamanhos')
+    maisTamanhos.addEventListener('input', function(event){
+        outrosTamanhos(event.target.value)
+        
+        
+    })
 
     function carregar(){
         let backgroundColor = localStorage.getItem('backgroundColor')
@@ -159,8 +182,11 @@
         let fontFamily = localStorage.getItem('fontFamily')
         if(fontFamily) mudaTipoFonte(fontFamily)
 
-        let backgroundColor2 = localStorage.getItem(backgroundColor2)
+        let backgroundColor2 = localStorage.getItem('backgroundColor2')
         if(backgroundColor2) outrasCores(backgroundColor2)
+
+        let maisTamanhos2 = localStorage.getItem('maisTamanhos2')
+        if(maisTamanhos2) outrosTamanhos(maisTamanhos2)
     }
     carregar()
  } 
