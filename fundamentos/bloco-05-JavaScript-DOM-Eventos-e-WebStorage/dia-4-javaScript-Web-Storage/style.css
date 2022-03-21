@@ -38,3 +38,8 @@ body{
 p{
     font-family: monospace;
 }
+
+
+.titulo, .descrição{
+    text-align: center;
+}

@@ -131,6 +131,18 @@
         tipoDaFonte[cont].addEventListener('click', mudaTipoFonte)
     }
 
+    function outrasCores(event){
+        let p = document.querySelectorAll('.paragrafo')           
+        let valores = event.target.value
+        for(let index = 0; index < p.length; index += 1){
+            p[index].style.backgroundColor = valores
+        }
+        localStorage.setItem('backgroundColor2', valores)
+    }
+
+    let maisCores = document.querySelector('#background-color2')
+    maisCores.addEventListener('input', outrasCores)
+
     function carregar(){
         let backgroundColor = localStorage.getItem('backgroundColor')
         if(backgroundColor) mudaCorFundo(backgroundColor)
@@ -146,6 +158,9 @@
 
         let fontFamily = localStorage.getItem('fontFamily')
         if(fontFamily) mudaTipoFonte(fontFamily)
+
+        let backgroundColor2 = localStorage.getItem(backgroundColor2)
+        if(backgroundColor2) outrasCores(backgroundColor2)
     }
     carregar()
  } 
