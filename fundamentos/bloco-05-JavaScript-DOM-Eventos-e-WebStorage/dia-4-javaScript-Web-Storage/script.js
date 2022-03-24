@@ -148,7 +148,7 @@
         
     })
 
-    function outrosTamanhos(fonteTamanho){
+     function outrosTamanhos(fonteTamanho){
        let p = document.querySelectorAll('.paragrafo')
        let evento = fonteTamanho    
        
@@ -157,14 +157,19 @@
            p[cont].style.fontSize = evento + 'px'
        }       
         localStorage.setItem('maisTamanhos2', evento) 
-    }
+    } 
+    
 
-    let maisTamanhos = document.querySelector('#maisTamanhos')
+     let maisTamanhos = document.querySelector('#maisTamanhos')
     maisTamanhos.addEventListener('input', function(event){
         outrosTamanhos(event.target.value)
         
         
-    })
+    }) 
+
+
+    
+        
 
     function carregar(){
         let backgroundColor = localStorage.getItem('backgroundColor')
@@ -190,3 +195,8 @@
     }
     carregar()
  } 
+
+
+
+
+ 
