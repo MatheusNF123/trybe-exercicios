@@ -6,13 +6,9 @@
 body{
     height: 100%;
     width: 100%;
-    background-image: url(Blue_abstract_gradient_Vector_HD_Wallpaper_2560x1600.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgb(205, 182, 224),rgb(128, 128, 250), rgb(205, 182, 224));
+    background-size: cover;    
     font-weight: 600;
-    
-    
-    
 
 }
 header{
@@ -21,6 +17,10 @@ header{
     margin-top: 20px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.margin-bot{
+    margin-bottom: 15px;
 }
 
 .cont-geral{
@@ -38,7 +38,7 @@ header{
     margin-bottom: 10px;
     color: blue;
     font-style: italic;
-    
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
 }
 
 
@@ -48,9 +48,7 @@ header{
     margin-bottom: 15px;
     background-color: rgb(224, 224, 224);
     border: none;
-    
-    
-    
+   
 }
 
 #nome::placeholder{
@@ -60,17 +58,18 @@ header{
    padding: 10px;
 }
 
-#op{
-    margin-bottom: 15px;
+#op #op1{ 
+    color: red;
 }
 
 #op1,  #op2, #op3, #op4{
     margin-right: 5px;
+    
 }
 
-#area{
-    margin-bottom: 10px;
-}
+
+
+
 #area h3{
     margin-bottom: 5px;
     font-size: 16px;
@@ -80,20 +79,11 @@ header{
 #textA{
     background-color: rgb(226, 225, 225);
     resize: none;
+    width: 100%;
+    
     
 }
 
-#cont{
-    margin-bottom: 15px;
-}
-
-#cont, #term{
-    margin-bottom: 15px;
-}
-
-.termo{
-    margin-bottom: 15px;
-}
 
 .btn{
     padding: 8px 20px;
@@ -105,7 +95,15 @@ header{
     width: 100px;
     font-weight: bold;
 }
+
+.btn:hover{
+    background-color: rgb(98, 195, 252);
+}
 #btnCont{
     text-align: center;
     margin: 10px;
+}
+
+#acpt1, #acpt2{
+    margin-bottom: 10px;
 }
