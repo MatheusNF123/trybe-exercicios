@@ -4,62 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrybeTrip</title>
 </head>
 
 <body>
     <header>
-        <h1>TrybeTrip</h1>
+        <h1>Trybe-Trip</h1>
     </header>
     <main>
 
         <section class="cont-geral"> 
+            <div id="titulo">
+                <h2 id="fTitle">Cadastro de Viagem</h2>
+            </div>
             <form action="">
                 <section cont-info>
                     <div id="info-cadastro">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" name="nome" id="nome" minlength="10" maxlength="40">
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" name="nome" id="nome" required minlength="10" maxlength="40" placeholder="Nome Completo">
                         <br>
-                        <label for="email">Nome:</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" required minlength="10" maxlength="50" placeholder="Seu melhor Email">
                     </div>
                     <div id="op">
-                        <input type="radio" name="opçoes" id="op1" value="">
-                        <label for="op1">opção 1</label>
-                        <input type="radio" name="opçoes" id="op2" value="">
-                        <label for="op1">opção 2</label>
-                        <input type="radio" name="opçoes" id="op3" value="">
-                        <label for="op1">opção 3</label>
-                        <input type="radio" name="opçoes" id="op4" value="">
-                        <label for="op1">opção 4</label>
+                        <h3 id="dest">Destino Preferido:</h3>
+                        <input type="radio" name="Preferenci de Destino" id="op1" value="cidade" required>
+                        <label for="op1">Cidade</label>
+                        <input type="radio" name="Preferenci de Destino" id="op2" value="campo" required>
+                        <label for="op1">Campo</label>
+                        <input type="radio" name="Preferenci de Destino" id="op3" value="praia" required>
+                        <label for="op1">Praia</label>
+                        <input type="radio" name="Preferenci de Destino" id="op4" value="montanhas" required>
+                        <label for="op1">Montanhas</label>
                     </div>
                     <div id="area">
-                        <h3>Um texto qualquer</h3>
-                        <textarea name="" id="" cols="50" rows="15"></textarea>
+                        <h3>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+                        <textarea name="descrição" id="textA" cols="50" rows="10" maxlength="500"></textarea>
                     </div>
                     <div id="cont">
-                        <label for="data">Data: </label>
-                        <input type="date" name="data" id="data">
+                        <label for="data">Qual a melhor data para realizar sua viagem? </label> <br>
+                        <input type="date" name="data" id="data"> 
                     </div>
                     <div id="term">
-                        <label for="acpt1">concordo 1</label>
-                        <input type="checkbox" name="termo" id="acpt1" class="termo">
-                        <label for="acpt2">concordo 2</label>
-                        <input type="checkbox" name="termo" id="acpt2" class="termo">
+                        <input type="checkbox" name="termo" id="acpt1" class="termo" checked>
+                        <label for="acpt1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label> <br>
+                        <input type="checkbox" name="termo" id="acpt2" class="termo" checked>
+                        <label for="acpt2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label> 
                     </div>
                 </section>
                 <section>
-                    <div>
+                    <div id="btnCont">
                         
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Apagar</button>
+                        <button type="submit" id="sub" class="btn">Enviar</button>
+                        <button type="reset" id="reset" class="btn">Apagar</button>
                     </div>
                 </section>
                 
             </form>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

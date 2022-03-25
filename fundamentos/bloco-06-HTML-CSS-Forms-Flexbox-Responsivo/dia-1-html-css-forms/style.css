@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(Blue_abstract_gradient_Vector_HD_Wallpaper_2560x1600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    
+    
+    
+
+}
+header{
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cont-geral{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 25px;
+    
+}
+
+
+#titulo{
+    text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+    font-style: italic;
+    
+}
+
+
+#email, #nome{
+    width: 100%;
+    height: 1.8em;
+    margin-bottom: 15px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    
+    
+    
+}
+
+#nome::placeholder{
+   padding: 10px;
+}
+#email::placeholder{
+   padding: 10px;
+}
+
+#op{
+    margin-bottom: 15px;
+}
+
+#op1,  #op2, #op3, #op4{
+    margin-right: 5px;
+}
+
+#area{
+    margin-bottom: 10px;
+}
+#area h3{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#textA{
+    background-color: rgb(226, 225, 225);
+    resize: none;
+    
+}
+
+#cont{
+    margin-bottom: 15px;
+}
+
+#cont, #term{
+    margin-bottom: 15px;
+}
+
+.termo{
+    margin-bottom: 15px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin-right: 20px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    width: 100px;
+    font-weight: bold;
+}
+#btnCont{
+    text-align: center;
+    margin: 10px;
+}
