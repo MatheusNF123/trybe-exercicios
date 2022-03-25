@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" href="style.css"> 
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+</head>
+
+<body>
+    
+    <main>
+
+        <section"> 
+            <div id="titulo" class="container">
+                <h1 class="text-center" id="fTitle">Cadastro de Viagem</h2>
+            </div>
+            <hr>
+            <form action="">
+                <section class="container">
+                    <div id="info-cadastro" class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo:</label><br>
+                        <input type="text" class="form-control" name="nome" id="nome" required minlength="10" maxlength="40" placeholder="Nome Completo">
+                        <br>
+                        <label for="email" class="form-label">Email:</label><br>
+                        <input type="email" class="form-control" name="email" id="email" required minlength="10" maxlength="50" placeholder="Seu melhor Email">
+                    </div>
+                    <div id="op" class="mb-3 form-control">
+                        <h3 id="dest" class="form-label">Destino Preferido:</h3>
+                        <input class="form-check-input" type="radio" name="Preferenci de Destino" id="op1" value="cidade" required>
+                        <label for="op1" class="form-check-label">Cidade</label>
+                        <input class="form-check-input" type="radio" name="Preferenci de Destino" id="op2" value="campo" required>
+                        <label for="op2" class="form-check-label">Campo</label>
+                        <input class="form-check-input" type="radio" name="Preferenci de Destino" id="op3" value="praia" required>
+                        <label for="op3" class="form-check-label">Praia</label>
+                        <input class="form-check-input" type="radio" name="Preferencia de Destino" id="op4" value="montanhas" required>
+                        <label for="op4" class="form-check-label">Montanhas</label>
+                    </div>
+                    <div id="area" class="mb-3" class="form-floating">
+                        <label for="textA" class="form-label"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label> 
+                        <textarea name="descrição" id="textA" cols="" rows="10" maxlength="500" class="form-control"></textarea>
+                    </div>
+                    <div id="cont" class="mb-3 form-control">
+                        <label for="data">Qual a melhor data para realizar sua viagem? </label> <br>
+                        <input type="date" name="data" id="data"> 
+                    </div>
+                    <div id="term" class="mb-3 form-check">
+                        <input type="checkbox" name="termo" id="acpt1" class="form-check-input"  checked>
+                        <label for="acpt1 form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label> <br>
+                        <input type="checkbox" name="termo" id="acpt2" class="form-check-input"  checked>
+                        <label for="acpt2 form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label> 
+                    </div>
+                </section>
+                <section class="container">
+                    <div id="btnCont" class="mb-3 text-center">
+                        
+                        <button type="submit" id="sub" class="btn btn-primary">Enviar</button>
+                        <button type="reset" id="reset" class="btn btn-primary btn btn-dark">Apagar</button>
+                    </div>
+                </section>
+                
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
