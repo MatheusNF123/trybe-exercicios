@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+/* exercicios */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+#cont-paragrafo{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin-top: 10px;
+}
+
+ #cont-img{
+ width: 100%;  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  
+  
+  
+
+}
+
+#cont-conteudo{
+  display: flex;
+  flex-direction: row;   
+  justify-content: center;
+  background-color: white;
+  box-shadow: none;
+  
+  
+}
+
+div{  
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #F1F1F1; 
+padding: 15px;
+margin: 0px 10px;
+border-radius: 10px;
+box-shadow: 5px 5px 5px rgb(184, 184, 184);
+
+
+} 
+
+
+  footer{
+  display: flex;
+  justify-content: center;  
+  margin-top: 20px;
+}  
+
+ hr{
+  margin-top: 25px;
+  background-color: black;
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+} 
