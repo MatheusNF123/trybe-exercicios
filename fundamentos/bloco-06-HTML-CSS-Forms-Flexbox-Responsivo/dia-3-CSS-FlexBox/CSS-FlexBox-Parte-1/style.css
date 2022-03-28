@@ -11,6 +11,7 @@
 
 .gallery-img {
   width: 150px;
+  height: 150px;
 }
 
 .social-img {
@@ -23,9 +24,11 @@
 header{
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-color: #323433;
   color: white;
   align-items: center;
+  width: 100%;
+  min-width: 600px;
 }
 
 #cont-paragrafo{
@@ -33,26 +36,29 @@ header{
   justify-content: center;
   align-items: center;  
   margin-top: 10px;
+  text-align: center;
 }
 
  #cont-img{
- width: 100%;  
-  display: flex;
-  justify-content: center;
+  
+  display: flex;  
   flex-wrap: wrap;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
   
   
   
-
 }
 
 #cont-conteudo{
   display: flex;
   flex-direction: row;   
-  justify-content: center;
-  background-color: white;
   box-shadow: none;
+  min-width: 550px;
+  max-width: 600px;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
   
   
 }
@@ -61,11 +67,11 @@ div{
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #F1F1F1; 
-padding: 15px;
-margin: 0px 10px;
+padding: 15px 10px;
+margin: 6px;
 border-radius: 10px;
 box-shadow: 5px 5px 5px rgb(184, 184, 184);
+background-color: #F1F1F1;
 
 
 } 
@@ -80,7 +86,8 @@ box-shadow: 5px 5px 5px rgb(184, 184, 184);
  hr{
   margin-top: 25px;
   background-color: black;
-  width: 30%;
+  width: 10%;
   margin: auto;
-  margin-top: 20px;
+  
 } 
+
