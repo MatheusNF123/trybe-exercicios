@@ -23,10 +23,10 @@
                 <section cont-info>
                     <div id="info-cadastro">
                         <label for="nome">Nome Completo:</label><br>
-                        <input type="text" name="nome" id="nome" required minlength="10" maxlength="40" placeholder="Nome Completo">
+                        <input type="text" name="nome" id="nome" required <!-- minlength="10" maxlength="40" --> placeholder="Nome Completo">
                         <br>
                         <label for="email">Email:</label><br>
-                        <input type="email" name="email" id="email" required minlength="10" maxlength="50" placeholder="Seu melhor Email">
+                        <input type="email" name="email" id="email" required <!-- minlength="10" maxlength="50"  -->placeholder="Seu melhor Email">
                     </div>
                     <div id="op" class="margin-bot">
                         <h3 id="dest">Destino Preferido:</h3>
@@ -51,7 +51,10 @@
                         <input type="checkbox" name="termo" id="acpt1" class="termo" checked>
                         <label for="acpt1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label> <br>
                         <input type="checkbox" name="termo" id="acpt2" class="termo" checked>
-                        <label for="acpt2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label> 
+                        <label for="acpt2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label> <br>
+                        <input type="checkbox" name="termo" id="acpt3" class="termo" checked required>
+                        <label for="acpt3">Direitos de imagem</label> 
+
                     </div>
                 </section>
                 <section>
