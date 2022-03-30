@@ -9,7 +9,7 @@ html {
 /* header */
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(163, 0, 163);
     align-items: center;
     color: wheat;
@@ -17,14 +17,23 @@ header{
 }
 
 header p{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+header img{
+    width: 30px;
+    align-self:center;
+    position: relative;
+    left: 100px;
+    
 }
 
 nav{
     margin-right: 15px;
     font-weight: bold;
+    display: none;
 }
 
 nav ul{
@@ -45,9 +54,11 @@ nav ul li{
 
 .container{
     margin: 20px;
+    
 }
 .main-content p {
     line-height: 22px;
+    
 }
 
 
@@ -80,6 +91,10 @@ h2{
 
 .main-content{
     margin-top: 30px;
+    
+}
+.main-content p{    
+    background-color: rgb(255, 255, 183);
 }
 
 .main-content h1{
@@ -112,4 +127,244 @@ footer{
 footer h3{
     text-align: center;
     margin-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 601px){
+    header{ 
+              
+        justify-content: space-between;
+        
+    
+    }
+    
+    header p{
+        font-size: 16px;        
+        margin-left:20px;
+        
+    }
+    header img{
+        display: none;
+        
+    }
+    
+    nav{
+        margin-right: 15px;
+        font-weight: bold;
+        display: flex;
+        
+    }
+    
+    nav ul{       
+        flex-direction: row;
+        
+    }
+    
+    nav ul li{
+        
+        padding: 4px;
+        margin: 0px 15px;
+    
+    }
+    /* asside */
+
+
+    
+    .main-content p {
+        line-height: 24px;
+    }
+    
+    
+    h2{
+        font-size: 25px;
+        
+        
+    }
+    
+   
+    
+    .aside-one ul li{
+        padding: 4px;
+        font-size: 18px;
+    }
+    
+    
+    
+    .aside-two ul li{
+        padding: 4px;
+        font-size: 18px;
+    }
+
+
+    /* article */
+
+.main-content{
+    margin-top: 40px;
+}
+
+.main-content h1{
+    font-size: 28px;
+    
+    
+}
+.main-content p{
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+
+/* footer */
+
+
+footer p{
+    font-size: 18px;
+}
+
+
+footer h3{    
+    margin-top: 10px;
+
+}
+
+
+.cont-footer{
+    max-width: 500px;
+}
+}
+
+
+
+
+@media screen and (min-width: 800px){    
+    header p{
+        font-size: 25px;        
+        margin-left: 60px;
+        
+    }
+    
+    
+    nav{
+        font-size: 18px;        
+    }
+    
+    
+    
+    nav ul li{
+        
+        margin: 0px 16px;
+    
+    }
+    /* asside */
+    .container-Lista-Texto{
+        display: flex;
+        
+    }
+    .aside-one {
+        flex-basis: 500px;
+    }
+    .conteudo-one-two{
+        order: 2;
+        flex-basis: 450px;
+        
+    }
+
+    .contaudo-texto{
+        flex-basis: 800px;
+        flex-grow: 5;
+        margin-right: 20px;
+       
+    }
+
+    
+    
+    .aside-two {
+        padding: 4px;
+        font-size: 18px;
+        flex-basis: 500px;
+    }
+
+    
+
+    
+    .main-content p {
+        line-height: 24px;
+    }
+    
+    
+    h2{
+        font-size: 25px;
+        
+        
+    }
+    
+   
+    
+   
+
+    /* article */
+
+.main-content{
+    margin-top: 20px;
+
+}
+
+.main-content h1{
+    font-size: 28px;
+    
+    
+}
+.main-content p{
+    font-size: 20px;
+    line-height: 28px;
+    
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+footer p{
+    flex-basis: 400px;
+    
+}
+
+
+footer h3{    
+    flex-basis: 400px;
+    order: 0;
+
+}
+
+
+.cont-footer{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+}
+
+
+@media screen and (min-width: 1200px){   
+    
+    header p{
+        font-size: 30px;        
+        margin-left: 200px;
+        
+    }
+    nav ul li{
+        
+        margin: 0px 36px;
+    
+    }
 }
