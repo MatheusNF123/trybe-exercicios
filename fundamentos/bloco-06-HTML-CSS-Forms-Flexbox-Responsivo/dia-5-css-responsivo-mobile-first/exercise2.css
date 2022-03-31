@@ -269,7 +269,9 @@ footer h3{
     }
     .conteudo-one-two{
         order: 2;
-        flex-basis: 450px;
+        
+        max-width: 315px;
+        min-width: 315px;
         
     }
 
@@ -293,6 +295,7 @@ footer h3{
     
     .main-content p {
         line-height: 24px;
+    
     }
     
     
@@ -309,7 +312,7 @@ footer h3{
     /* article */
 
 .main-content{
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
