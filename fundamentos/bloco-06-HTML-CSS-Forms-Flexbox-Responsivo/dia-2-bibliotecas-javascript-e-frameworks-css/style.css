@@ -1,0 +1,21 @@
+body{
+    padding-top: 20px;
+}
+
+.text-center{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin-left: 30px;
+}
+
+#dest{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+form{
+    border: 1px solid rgb(223, 223, 223);
+    padding-top: 10px;
+}
