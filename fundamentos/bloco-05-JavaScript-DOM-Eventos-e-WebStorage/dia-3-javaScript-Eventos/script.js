@@ -55,9 +55,9 @@ const btn = document.getElementById('btn-holiday')
 btn.addEventListener('click', mudaCor)
 
 function mudaCor() {
-  const diasLI = document.getElementsByClassName(' holiday')
+  const diasLI = document.getElementsByClassName('holiday')
   for (let cont = 0; cont < diasLI.length; cont += 1) {
-    if (diasLI[cont].style.backgroundColor == 'red') {
+    if (diasLI[cont].style.backgroundColor === 'red') {
       diasLI[cont].style.backgroundColor = 'rgb(238,238,238)'
     }
     else {
@@ -84,18 +84,138 @@ botaosexta(stringSexta)
 
 // Exercício 5:
 
+
+const diasli = document.querySelectorAll('.friday')
+let guarda = []
+for (let cont1 = 0; cont1 < diasli.length; cont1 += 1) {
+  guarda.push(diasli[cont1].innerText)
+}
+
+
 const btnSexta = document.getElementById('btn-friday')
+
 function mostraTextoExibito() {
-  const diasli = document.querySelectorAll('.friday')
   for (let cont = 0; cont < diasli.length; cont += 1) {
-    let armazena = diasli[cont].innerText;    
-    if(diasli[cont].innerText === 'Sexta-Feira'){
-      diasli[cont].innerText = armazena
+    if (diasli[cont].innerText === 'Sexta') {
+      diasli[cont].innerText = guarda[cont]
     }
-    else{
-      diasli[cont].innerText = 'Sexta-Feira'
+    else {
+      diasli[cont].innerText = 'Sexta'
     }
   }
-
 }
 btnSexta.addEventListener('click', mostraTextoExibito)
+
+// Exercício 6:
+
+const days = document.getElementById('days')
+days.addEventListener('mousemove', darZoom)
+days.addEventListener('mouseout', tiraZoom)
+
+function darZoom(event){
+  const listas = document.querySelectorAll('.day')
+  for(let index = 0; index < listas.length; index += 1){    
+    listas[index] = event.target.style.fontSize = '30px'
+  } 
+  
+}
+
+function tiraZoom(event){
+  const listas = document.querySelectorAll('.day')
+  for(let index = 0; index < listas.length; index += 1){    
+    listas[index] = event.target.style.fontSize = '20px'   
+  } 
+}
+
+// Exercício 7:
+let tarefa = 'projeto'
+function adicionaTarefa (string){
+  const minhaTareda = document.querySelector('.my-tasks')
+  const span = document.createElement('span')
+  minhaTareda.appendChild(span)
+  span.innerText = string
+}
+adicionaTarefa(tarefa)
+
+// Exercício 8:
+let cor = 'blue'
+function adicionaLegenda(cor){
+  const minhaTareda = document.querySelector('.my-tasks')
+  const div = document.createElement('div')
+  div.classList.add('task')
+  minhaTareda.appendChild(div)
+  div.style.backgroundColor = cor
+}
+adicionaLegenda(cor)
+
+// Exercício 9:
+const minhaDiv = document.getElementsByClassName('task')[0]
+minhaDiv.addEventListener('click', selecionaTask)
+function selecionaTask(){
+  if(minhaDiv.className !== 'task selected'){
+  minhaDiv.classList.add('selected')
+  console.log('a')
+}
+  else{
+  minhaDiv.classList.remove('selected')
+  console.log('b')
+}
+}
+
+
+// Exercício 10:
+ function atibuiCor(event){
+  let minhaCor = document.getElementsByClassName('task selected')[0]
+  let pegaCor = minhaCor.style.backgroundColor  
+  let evento = event.target
+  
+  if(evento.style.color === pegaCor){
+    evento.style.color = 'rgb(119,119,119)'        
+  }
+  else{
+    evento.style.color = pegaCor
+      
+    
+  }
+
+
+}
+
+let diasss = document.querySelector('#days')
+diasss.addEventListener('click', atibuiCor)
+
+
+// Bônus:
+
+
+// referencia keypress https://developer.mozilla.org/pt-BR/docs/Web/API/Document/keypress_event 
+// https://www.youtube.com/watch?v=OnY78r8kkXo
+function compromisos(){
+  const caixaTexto = document.querySelector('#task-input')
+  let pegarTexto = caixaTexto.value
+  if(pegarTexto == ""){
+    alert('Error! Você não digitou nada ainda!')
+  }
+  else{
+    let span = document.createElement('li')
+    document.querySelector('.task-list').appendChild(span)
+    span.innerText = pegarTexto
+    
+  }
+  caixaTexto.value = '';
+
+}
+const botaoCompromisso = document.querySelector('#btn-add')
+botaoCompromisso.addEventListener('click', compromisos)
+
+const caixaTexto2 = document.querySelector('#task-input')
+caixaTexto2.addEventListener('keypress', function(event){
+  if(event.key === 'Enter'){
+    compromisos()
+  }
+
+})
+
+
+
+
