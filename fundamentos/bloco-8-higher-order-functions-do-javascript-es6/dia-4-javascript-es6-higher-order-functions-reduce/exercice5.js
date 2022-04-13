@@ -81,7 +81,7 @@ const names = [
   }
   console.log(containsA(names));
 
-
+//gabarito
 //   const names = [
 //     'Aanemarie', 'Adervandes', 'Akifusa',
 //     'Abegildo', 'Adicellia', 'Aladonata',

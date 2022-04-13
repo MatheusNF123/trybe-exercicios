@@ -78,7 +78,7 @@ function averageAge(obj) {
        },0)
     return array / numero
 }
-// console.log(averageAge(books));
+ console.log(averageAge(books));
 
 
 
