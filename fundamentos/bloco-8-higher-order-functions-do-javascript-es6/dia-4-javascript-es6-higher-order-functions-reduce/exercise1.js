@@ -13,3 +13,15 @@
 
       }
       console.log(flatten(arrays));
+
+// -------- //
+// outro modo de fazer 
+      function flatten(objeto) {
+        // escreva seu código aqui
+        return objeto.reduce((acc, elemento) =>{
+          acc.push(...elemento)
+          return acc
+        },[])
+      }
+
+      console.log(flatten(arrays));
