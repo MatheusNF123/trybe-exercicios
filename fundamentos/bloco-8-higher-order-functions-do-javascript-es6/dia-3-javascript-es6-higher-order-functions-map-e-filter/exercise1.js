@@ -175,7 +175,7 @@ const books = [
     return arrayFiccaoOuFantasia
 
   }
-//   console.log(fantasyOrScienceFiction(books));
+//  console.log(fantasyOrScienceFiction(books));
   
 
 
@@ -238,7 +238,7 @@ const books = [
     return nomePessoasAutorasFiccaoFantasia
   }
 
-//   console.log(fantasyOrScienceFictionAuthors(books));
+  // console.log(fantasyOrScienceFictionAuthors(books));
 
 
 
