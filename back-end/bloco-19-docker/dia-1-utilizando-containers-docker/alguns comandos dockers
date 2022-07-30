@@ -1,0 +1,23 @@
+
+
+--- Baixando e utilizando a tag: stable-slim: docker pull:stable-slim
+
+--- crie e execute um container no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag: docker container create -it debian:stable-slim
+
+--- executar o comando cat /etc/*-release
+
+--- encerrar o terminal: Exit
+
+--- Verifique na sua lista de containers qual container se refere ao exercício que acabou de praticar: ocker container ls -l, (para mostrar qual foi o último container criado ou usando -a para listar todos
+ 
+--- Inicie o mesmo container novamente, sem criar outro : docker start containerid ou nome
+
+--- retomar o container que foi criado anteriormente: docker attach containerId ou nome
+
+--- Roder o comando cat /etc/debian_version que deve retornar a versão atual do sistema do container.
+
+--- remover o container ja criado: docker container rm containerId names
+
+Criar e rodar  de modo interativo em modo 'Cleanup', a imagem andrius/ascii-patrol:  docker run -it --rm andrius/ascii-patrol (-it permite a interação com o jogo pelo terminal e o --rm garante que o container será removido ao terminar o jogo)
+
+Encerrar o container utilizando os botões [ctrl] + [c].
